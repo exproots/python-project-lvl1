@@ -1,9 +1,17 @@
-name: linter
+name: Python CI
+
 on: push
+
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: my-step
-      run: make linter
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+      - name: Run linter
+        run: |
+          make lint
