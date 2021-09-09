@@ -6,4 +6,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: my-step
-        run: poetry make lint
+      run: poetry make lint
