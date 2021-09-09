@@ -13,7 +13,7 @@
          uses: actions/checkout@v2
        - name: Install dependencies
          run: |
-           pip install poetry env-use 1.1.2
+           pip install poetry
            make install
        - name: Run linter
          run: |
