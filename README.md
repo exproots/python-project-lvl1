@@ -3,4 +3,4 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/exproots/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/exproots/python-project-lvl1/actions)
 
-https://asciinema.org/a/a569hn5O1nYok63BvFlNTnrs7
+[![asciicast](https://asciinema.org/a/a569hn5O1nYok63BvFlNTnrs7.svg)](https://asciinema.org/a/a569hn5O1nYok63BvFlNTnrs7)
