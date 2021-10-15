@@ -35,4 +35,4 @@ def gcd():
         answer_correct = true_answer
         answer_user = prompt.string('You answer: ')
         answer_check(answer_user, answer_correct, name)
-        print('Congratulations, ' + name + '!')
+    print('Congratulations, ' + name + '!')
