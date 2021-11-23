@@ -1,28 +1,21 @@
 #!/usr/bin/env python
 from random import randint, choice
-from brain_games.logic_functions import welcome, get_name, answer_check
-import prompt
 
-welcome()
-name = get_name()
-QUESTION_TASK = 'What is the result of the expression?'
-print(QUESTION_TASK)
+TASK_DESCRIPTION = 'What is the result of the expression?'
 
 
-def calc():
+def get_game_round():
     count_rounds = 3
     operator_list = ['+', '-', '*']
     for i in range(count_rounds):
         question_number = randint(10, 30)
         question_number2 = randint(1, 10)
         question_operator = choice(operator_list)
-        print('Question: ' + str(question_number) + ' ' + question_operator + ' ' + str(question_number2))
-        answer_user = prompt.string('Your answer: ')
         if question_operator == '+':
-            answer_correct = str(question_number + question_number2)
+            correct_answer = str(question_number + question_number2)
         elif question_operator == '-':
-            answer_correct = str(question_number - question_number2)
+            correct_answer = str(question_number - question_number2)
         else:
-            answer_correct = str(question_number * question_number2)
-        answer_check(answer_user, answer_correct, name)
-    print('Congratulations, ' + name + '!')
+            correct_answer = str(question_number * question_number2)
+        question = str(question_number) + ' ' + question_operator + ' ' + str(question_number2)
+        return str(question), str(correct_answer)

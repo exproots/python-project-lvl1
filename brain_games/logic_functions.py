@@ -6,21 +6,26 @@ import prompt
 rounds_count = 3
 
 
-def welcome():
+def get_game(game):
     print('Welcome to the Brain Games!')
-
-
-def get_name():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
+    print(game.TASK_DESCRIPTION)
+    count_rounds = 3
+    step_round = 1
 
-
-def answer_check(answer_user, answer_correct, name):
-    if answer_user == answer_correct:
-        print('Correct!')
-        return True
-    else:
-        print("'" + answer_user + "' is wrong answer ;(. Correct answer was '" + answer_correct + "'.")
-        print("Let`s try again, " + name + "!")
-        exit()
+    while step_round <= count_rounds:
+        question, correct_answer = game.get_game_round()
+        print('Question:' + question)
+        answer_user = prompt.string('You answer: ')
+        if step_round == count_rounds and answer_user == correct_answer:
+            print('Correct!')
+            print('Congratulations, ' + name + '!')
+        if answer_user == correct_answer and step_round != count_rounds:
+            print('Correct!')
+        else:
+            if answer_user != correct_answer:
+                print("'" + answer_user + "' is wrong answer ;(. Correct answer was '" + correct_answer + "'.")
+                print('Let`s try again, ' + name + '!')
+                exit()
+        step_round += 1
