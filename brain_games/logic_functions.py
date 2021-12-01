@@ -21,7 +21,6 @@ def get_game(game):
         if step_round == count_rounds and answer_user == correct_answer:
             print('Correct!')
             print('Congratulations, ' + name + '!')
-            exit()
         if answer_user == correct_answer and step_round != count_rounds:
             print('Correct!')
         else:
