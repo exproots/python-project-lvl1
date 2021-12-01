@@ -10,17 +10,14 @@ second_number = 10
 
 def check_prime(prime_number):
     """Функция для определения простого числа!"""
-    first_prime = 2
-    if prime_number % 2 == 0:
+    k = 0
+    for i in range(2, prime_number // 2+1):
+        if (prime_number % i == 0):
+            k += 1
+    if (k <= 0):
+        return True
+    else:
         return False
-    if prime_number < first_prime:
-        return False
-    d = 3
-    if prime_number == 9:
-        return False
-    while d * d <= prime_number and prime_number % d != 0:
-        d += 1
-    return True
 
 
 def get_game_round():
