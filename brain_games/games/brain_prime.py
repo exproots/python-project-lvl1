@@ -11,7 +11,7 @@ second_number = 10
 def check_prime(prime_number):
     """Функция для определения простого числа!"""
     k = 0
-    for i in range(2, prime_number // 2+1):
+    for i in range(2, prime_number // 2 + 1):
         if (prime_number % i == 0):
             k += 1
     if (k <= 0):
