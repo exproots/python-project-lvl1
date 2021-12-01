@@ -22,9 +22,9 @@ def get_game_round():
     number_prog9 = number_prog8 + select_number
     number_prog10 = number_prog9 + select_number
     numbers_progression = [first_number, number_prog2, number_prog3,
-     number_prog4, number_prog5, 
-     number_prog6, number_prog7,
-     number_prog8, number_prog9, number_prog10]
+    number_prog4, number_prog5,
+    number_prog6, number_prog7,
+    number_prog8, number_prog9, number_prog10]
     hidden_number = choice(numbers_progression)
     question = ""
     for x in progression:
