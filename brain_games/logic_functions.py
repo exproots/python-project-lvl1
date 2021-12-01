@@ -16,7 +16,7 @@ def get_game(game):
 
     while step_round <= count_rounds:
         question, correct_answer = game.get_game_round()
-        print('Question:' + question)
+        print(f'Question: {question}')
         answer_user = prompt.string('You answer: ')
         if step_round == count_rounds and answer_user == correct_answer:
             print('Correct!')
@@ -26,6 +26,6 @@ def get_game(game):
         else:
             if answer_user != correct_answer:
                 print("'" + answer_user + "' is wrong answer ;(. Correct answer was '" + correct_answer + "'.")
-                print('Let`s try again, ' + name + '!')
+                print("Let's try again, " + name + "!")
                 exit()
         step_round += 1
