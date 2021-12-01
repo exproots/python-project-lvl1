@@ -17,7 +17,7 @@ def check_prime(prime_number):
     if (k <= 0):
         return True
     if prime_number < 2:
-        return True
+        return False
     else:
         return False
 
