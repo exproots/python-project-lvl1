@@ -15,6 +15,7 @@ def check_prime(prime_number):
         return True
     if prime_number < first_prime:
         return False
+    exit()
 
 
 def get_game_round():
