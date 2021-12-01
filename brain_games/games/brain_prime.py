@@ -16,6 +16,8 @@ def check_prime(prime_number):
     if prime_number < first_prime:
         return False
     d = 3
+    if prime_number == 9:
+        return False
     while d * d <= prime_number and prime_number % d != 0:
         d += 1
     return True
