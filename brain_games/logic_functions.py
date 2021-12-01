@@ -26,9 +26,7 @@ def get_game(game):
             print('Correct!')
         else:
             if answer_user != correct_answer:
-                print("'" + answer_user +\
-                     "' is wrong answer ;(. Correct answer was '" \
-                         + correct_answer + "'.")
+                print("'" + answer_user +' is wrong answer ;(. Correct answer was ' + correct_answer + "'.")
                 print("Let's try again, " + name + "!")
                 exit()
         step_round += 1
