@@ -3,7 +3,7 @@ from random import randint
 
 
 TASK_DESCRIPTION = 'Answer "yes" if given number is prime.'
-                   'Otherwise answer "no".'
+'Otherwise answer "no".'
 
 first_number = 1
 second_number = 30
