@@ -11,7 +11,8 @@ def get_game_round():
     random_number_progression = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     select_number = choice(random_number_progression)
     first_number = randint(random_generate_number1, random_generate_number2)
-    progression = [x for x in range(first_number, first_number + select_number * 11, select_number)]
+    progression = [x for x in range(first_number, first_number + 
+                   select_number * 11, select_number)]
     number_prog2 = first_number + select_number
     number_prog3 = number_prog2 + select_number
     number_prog4 = number_prog3 + select_number
